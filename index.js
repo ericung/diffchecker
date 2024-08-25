@@ -31,3 +31,17 @@ editor2.addEventListener('keydown', function(e) {
 	}
 });
 
+function diff(editor1, editor2) {
+	var i = 0, j = 0;
+	var str = "";
+
+	while (i < editor1.length && j < editor2.length) {
+		if (editor1[i] != editor2[j]) {
+			str += editor2[j];
+			j++;
+		}
+	}
+
+	return str;
+}
+
