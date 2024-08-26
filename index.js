@@ -114,12 +114,10 @@ function diff(editor1, editor2) {
 
 	while (i < editor1.length && j < editor2.length) {
 		if ((editor1[i] != editor2[j])&&(editor1.length < editor2.length)) {
-			str += editor2[j];
-			j++;
+			str += editor2[j++];
 		}
-		else if ((editor1[i] != editor2[j])&&(editor2.length < editor1.length)) {
-			str += editor2[i];
-			i++;
+		else if ((editor1[i] != editor2[j])&&(editor2.length <= editor1.length)) {
+			str += editor1[i++];
 		}
 		else {
 			i++;
