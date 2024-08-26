@@ -108,6 +108,7 @@ function httpGet(theUrl) {
 	return xmlHttp.responseText;
 }
 
+// leetcode
 function diff(editor1, editor2) {
 	var i = 0, j = 0;
 	var str = "";
